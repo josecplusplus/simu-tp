@@ -38,7 +38,7 @@ def generarIntervaloPedido(tiempoActual, radio):
 def generarTiempoEntrega(radio):
     velocidad_promedio_kmh = 9.0
     mejor_tiempo_atencion_minutos = 17.0 # tiempo récord
-    peor_tiempo_minutos = (4.0 * radio) / (velocidad_promedio_kmh / 60.0)
+    peor_tiempo_minutos = (2.0 * radio) / (velocidad_promedio_kmh / 60.0) #Se asigna al repartidor mas cercano al punto de retiro
     # Distribucion beta
     a = 17
     b = 41
